@@ -17,6 +17,9 @@ public:
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+    
+    //show AdColony v4vc ads
+    void showV4VC(Ref* pSender);
 };
 
 #endif // __HELLOWORLD_SCENE_H__

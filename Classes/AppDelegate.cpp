@@ -1,6 +1,8 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 
+#include "PluginAdColony/PluginAdColony.h"
+
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -52,6 +54,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // run
     director->runWithScene(scene);
 
+    //Initialize AdColony
+    sdkbox::PluginAdColony::init();
+    
     return true;
 }
 
